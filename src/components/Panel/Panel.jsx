@@ -37,10 +37,10 @@ class Panel extends React.Component {
             <input type="checkbox"/> Enabled
           </label>
   
-          <div className={cx(styles.headerAction)}
+          <button className={cx(styles.headerAction)}
                 onClick={this.toggle}>
             x
-          </div>
+          </button>
         </div>
   
         <div className={bodyClasses}>
