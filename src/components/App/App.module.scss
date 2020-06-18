@@ -1,0 +1,22 @@
+@import '../../css/variables.scss';
+
+.component {
+  display: flex;
+  flex-direction: column;;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: $baseline * 4 0;
+
+  background: $color-light-gray;
+}
+
+.body {
+  min-width: $baseline * 40;
+  width: 80%;
+  margin-bottom: -$baseline * 2;
+}
+
+.panel {
+  margin-bottom: $baseline * 2;
+}

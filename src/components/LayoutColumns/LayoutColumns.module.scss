@@ -1,0 +1,25 @@
+@import '../../css/variables.scss';
+
+$allowed-spacing: 1, 2, 3, 4;
+
+.layout {
+  display: flex;
+  align-items: center;
+
+  @each $spacing in $allowed-spacing {
+    &.spacing-#{$spacing} {
+      margin-left: -$baseline * $spacing;
+    }
+  }
+}
+
+.item {
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  @each $spacing in $allowed-spacing {
+    &.spacing-#{$spacing} {
+      margin-left: $baseline * $spacing;
+    }
+  }
+}

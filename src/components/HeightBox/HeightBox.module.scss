@@ -1,0 +1,6 @@
+@import '../../css/variables.scss';
+@import '../../css/heightbox.scss';
+
+.component {
+  @extend %heightbox;
+}

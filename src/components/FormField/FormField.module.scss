@@ -1,0 +1,30 @@
+@import '../../css/variables.scss';
+@import '../../css/typography.scss';
+@import '../../css/heightbox.scss';
+
+.group {
+  margin-bottom: -$baseline;
+}
+
+.component {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: $baseline;
+}
+
+.label {
+  flex-shrink: 0;
+  width: 40%;
+}
+
+  .labelText {
+    @extend %heightbox;
+    @extend %font-body;
+    font-weight: 600;
+  }
+
+.controls {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-left: $baseline * 2;
+}

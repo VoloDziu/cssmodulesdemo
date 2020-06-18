@@ -1,0 +1,40 @@
+@import "../../css/variables.scss";
+@import "../../css/icon-button.scss";
+@import "../../css/card.scss";
+@import "../../css/typography.scss";
+
+.component {
+  @extend %card;
+  border-radius: $baseline / 2;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: $baseline/2 $baseline * 2;
+  min-height: $baseline * 5;
+}
+
+  .headerTitle {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    @extend %font-header;
+  }
+
+  .headerAction {
+    flex-shrink: 0;
+
+    margin-left: $baseline;
+
+    @extend %font-body;
+  }
+
+.body {
+  &:not(.bodyOpen) {
+    display: none;
+  }
+
+  padding: $baseline * 2;
+  border-top: 1px solid $color-border;
+}
